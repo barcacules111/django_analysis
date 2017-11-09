@@ -96,6 +96,14 @@
           {
             "name": "Bug42492",
             "expression": "'Error Log'[ErrorTime]'Error Log'[UserName]"
+          },
+          {
+            "name": "Test",
+            "expression": "'SalesLT.Address'[AddressLine2]SUM('SalesLT.Address'[AddressLine2])"
+          },
+          {
+            "name": "SUM",
+            "expression": "AVERAGE('SalesLT.Address'[AddressID])"
           }
         ]
       },
