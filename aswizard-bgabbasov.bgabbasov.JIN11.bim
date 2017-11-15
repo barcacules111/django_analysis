@@ -2413,7 +2413,14 @@
             "name": "ErrorLogID",
             "dataType": "int64",
             "isNullable": false,
-            "sourceColumn": "ErrorLogID"
+            "sourceColumn": "ErrorLogID",
+            "alternateOf": {
+              "baseColumn": {
+                "table": "Sales L T. Customer Address",
+                "column": "CustomerID"
+              },
+              "summarization": "count"
+            }
           },
           {
             "name": "ErrorTime",
