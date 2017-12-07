@@ -1,5 +1,5 @@
 {
-  "name": "RapMonsteR",
+  "name": "RapMonster",
   "id": "RapMonster",
   "description": "Imported database from sql server 'analytics-db-server.database.windows.net' and database 'analytics_db'",
   "compatibilityLevel": 1400,
