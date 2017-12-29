@@ -22,7 +22,8 @@
         "credential": {
           "AuthenticationKind": "UsernamePassword",
           "Username": "analytics_admin",
-          "EncryptConnection": true
+          "EncryptConnection": true,
+          "Password": null
         }
       }
     ],
@@ -66,10 +67,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"dbo_BuildVersion\" = Source{[Schema=\"dbo\",Item=\"BuildVersion\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"dbo_BuildVersion" = Source{[Schema="dbo",Item="BuildVersion"]}[Data] ",
                 "in ",
-                "#\"dbo_BuildVersion\""
+                "#"dbo_BuildVersion""
               ]
             }
           }
@@ -145,10 +146,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"dbo_ErrorLog\" = Source{[Schema=\"dbo\",Item=\"ErrorLog\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"dbo_ErrorLog" = Source{[Schema="dbo",Item="ErrorLog"]}[Data] ",
                 "in ",
-                "#\"dbo_ErrorLog\""
+                "#"dbo_ErrorLog""
               ]
             }
           }
@@ -198,10 +199,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"dbo_sysdiagrams\" = Source{[Schema=\"dbo\",Item=\"sysdiagrams\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"dbo_sysdiagrams" = Source{[Schema="dbo",Item="sysdiagrams"]}[Data] ",
                 "in ",
-                "#\"dbo_sysdiagrams\""
+                "#"dbo_sysdiagrams""
               ]
             }
           }
@@ -248,10 +249,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_authorhashtag_graph\" = Source{[Schema=\"pbist_twitter\",Item=\"authorhashtag_graph\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_authorhashtag_graph" = Source{[Schema="pbist_twitter",Item="authorhashtag_graph"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_authorhashtag_graph\""
+                "#"pbist_twitter_authorhashtag_graph""
               ]
             }
           }
@@ -298,10 +299,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_authormention_graph\" = Source{[Schema=\"pbist_twitter\",Item=\"authormention_graph\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_authormention_graph" = Source{[Schema="pbist_twitter",Item="authormention_graph"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_authormention_graph\""
+                "#"pbist_twitter_authormention_graph""
               ]
             }
           }
@@ -359,10 +360,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_configuration\" = Source{[Schema=\"pbist_twitter\",Item=\"configuration\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_configuration" = Source{[Schema="pbist_twitter",Item="configuration"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_configuration\""
+                "#"pbist_twitter_configuration""
               ]
             }
           }
@@ -403,10 +404,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_entityinitialcount\" = Source{[Schema=\"pbist_twitter\",Item=\"entityinitialcount\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_entityinitialcount" = Source{[Schema="pbist_twitter",Item="entityinitialcount"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_entityinitialcount\""
+                "#"pbist_twitter_entityinitialcount""
               ]
             }
           }
@@ -435,10 +436,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_hashtag_slicer\" = Source{[Schema=\"pbist_twitter\",Item=\"hashtag_slicer\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_hashtag_slicer" = Source{[Schema="pbist_twitter",Item="hashtag_slicer"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_hashtag_slicer\""
+                "#"pbist_twitter_hashtag_slicer""
               ]
             }
           }
@@ -467,10 +468,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_mention_slicer\" = Source{[Schema=\"pbist_twitter\",Item=\"mention_slicer\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_mention_slicer" = Source{[Schema="pbist_twitter",Item="mention_slicer"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_mention_slicer\""
+                "#"pbist_twitter_mention_slicer""
               ]
             }
           }
@@ -494,10 +495,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_minimum_tweets\" = Source{[Schema=\"pbist_twitter\",Item=\"minimum_tweets\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_minimum_tweets" = Source{[Schema="pbist_twitter",Item="minimum_tweets"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_minimum_tweets\""
+                "#"pbist_twitter_minimum_tweets""
               ]
             }
           }
@@ -546,10 +547,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_ssas_jobs\" = Source{[Schema=\"pbist_twitter\",Item=\"ssas_jobs\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_ssas_jobs" = Source{[Schema="pbist_twitter",Item="ssas_jobs"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_ssas_jobs\""
+                "#"pbist_twitter_ssas_jobs""
               ]
             }
           }
@@ -633,10 +634,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_tweets_normalized\" = Source{[Schema=\"pbist_twitter\",Item=\"tweets_normalized\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_tweets_normalized" = Source{[Schema="pbist_twitter",Item="tweets_normalized"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_tweets_normalized\""
+                "#"pbist_twitter_tweets_normalized""
               ]
             }
           }
@@ -762,10 +763,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_tweets_processed\" = Source{[Schema=\"pbist_twitter\",Item=\"tweets_processed\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_tweets_processed" = Source{[Schema="pbist_twitter",Item="tweets_processed"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_tweets_processed\""
+                "#"pbist_twitter_tweets_processed""
               ]
             }
           }
@@ -809,10 +810,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_twitter_query\" = Source{[Schema=\"pbist_twitter\",Item=\"twitter_query\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_twitter_query" = Source{[Schema="pbist_twitter",Item="twitter_query"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_twitter_query\""
+                "#"pbist_twitter_twitter_query""
               ]
             }
           }
@@ -857,10 +858,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_twitter_query_details\" = Source{[Schema=\"pbist_twitter\",Item=\"twitter_query_details\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_twitter_query_details" = Source{[Schema="pbist_twitter",Item="twitter_query_details"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_twitter_query_details\""
+                "#"pbist_twitter_twitter_query_details""
               ]
             }
           }
@@ -905,10 +906,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_twitter_query_readable\" = Source{[Schema=\"pbist_twitter\",Item=\"twitter_query_readable\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_twitter_query_readable" = Source{[Schema="pbist_twitter",Item="twitter_query_readable"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_twitter_query_readable\""
+                "#"pbist_twitter_twitter_query_readable""
               ]
             }
           }
@@ -987,10 +988,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_Address\" = Source{[Schema=\"SalesLT\",Item=\"Address\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_Address" = Source{[Schema="SalesLT",Item="Address"]}[Data] ",
                 "in ",
-                "#\"SalesLT_Address\""
+                "#"SalesLT_Address""
               ]
             }
           }
@@ -1105,10 +1106,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_Customer\" = Source{[Schema=\"SalesLT\",Item=\"Customer\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_Customer" = Source{[Schema="SalesLT",Item="Customer"]}[Data] ",
                 "in ",
-                "#\"SalesLT_Customer\""
+                "#"SalesLT_Customer""
               ]
             }
           }
@@ -1160,10 +1161,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_CustomerAddress\" = Source{[Schema=\"SalesLT\",Item=\"CustomerAddress\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_CustomerAddress" = Source{[Schema="SalesLT",Item="CustomerAddress"]}[Data] ",
                 "in ",
-                "#\"SalesLT_CustomerAddress\""
+                "#"SalesLT_CustomerAddress""
               ]
             }
           }
@@ -1290,10 +1291,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_Product\" = Source{[Schema=\"SalesLT\",Item=\"Product\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_Product" = Source{[Schema="SalesLT",Item="Product"]}[Data] ",
                 "in ",
-                "#\"SalesLT_Product\""
+                "#"SalesLT_Product""
               ]
             }
           }
@@ -1344,10 +1345,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_ProductCategory\" = Source{[Schema=\"SalesLT\",Item=\"ProductCategory\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_ProductCategory" = Source{[Schema="SalesLT",Item="ProductCategory"]}[Data] ",
                 "in ",
-                "#\"SalesLT_ProductCategory\""
+                "#"SalesLT_ProductCategory""
               ]
             }
           }
@@ -1392,10 +1393,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_ProductDescription\" = Source{[Schema=\"SalesLT\",Item=\"ProductDescription\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_ProductDescription" = Source{[Schema="SalesLT",Item="ProductDescription"]}[Data] ",
                 "in ",
-                "#\"SalesLT_ProductDescription\""
+                "#"SalesLT_ProductDescription""
               ]
             }
           }
@@ -1446,10 +1447,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_ProductModel\" = Source{[Schema=\"SalesLT\",Item=\"ProductModel\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_ProductModel" = Source{[Schema="SalesLT",Item="ProductModel"]}[Data] ",
                 "in ",
-                "#\"SalesLT_ProductModel\""
+                "#"SalesLT_ProductModel""
               ]
             }
           }
@@ -1501,10 +1502,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_ProductModelProductDescription\" = Source{[Schema=\"SalesLT\",Item=\"ProductModelProductDescription\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_ProductModelProductDescription" = Source{[Schema="SalesLT",Item="ProductModelProductDescription"]}[Data] ",
                 "in ",
-                "#\"SalesLT_ProductModelProductDescription\""
+                "#"SalesLT_ProductModelProductDescription""
               ]
             }
           }
@@ -1584,10 +1585,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_SalesOrderDetail\" = Source{[Schema=\"SalesLT\",Item=\"SalesOrderDetail\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_SalesOrderDetail" = Source{[Schema="SalesLT",Item="SalesOrderDetail"]}[Data] ",
                 "in ",
-                "#\"SalesLT_SalesOrderDetail\""
+                "#"SalesLT_SalesOrderDetail""
               ]
             }
           }
@@ -1751,10 +1752,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_SalesOrderHeader\" = Source{[Schema=\"SalesLT\",Item=\"SalesOrderHeader\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_SalesOrderHeader" = Source{[Schema="SalesLT",Item="SalesOrderHeader"]}[Data] ",
                 "in ",
-                "#\"SalesLT_SalesOrderHeader\""
+                "#"SalesLT_SalesOrderHeader""
               ]
             }
           }
@@ -1801,10 +1802,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_authorhashtag_graph\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_authorhashtag_graph\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_authorhashtag_graph" = Source{[Schema="pbist_twitter",Item="vw_authorhashtag_graph"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_authorhashtag_graph\""
+                "#"pbist_twitter_vw_authorhashtag_graph""
               ]
             }
           }
@@ -1851,10 +1852,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_authormention_graph\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_authormention_graph\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_authormention_graph" = Source{[Schema="pbist_twitter",Item="vw_authormention_graph"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_authormention_graph\""
+                "#"pbist_twitter_vw_authormention_graph""
               ]
             }
           }
@@ -1905,10 +1906,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_configuration\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_configuration\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_configuration" = Source{[Schema="pbist_twitter",Item="vw_configuration"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_configuration\""
+                "#"pbist_twitter_vw_configuration""
               ]
             }
           }
@@ -1937,10 +1938,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_hashtag_slicer\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_hashtag_slicer\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_hashtag_slicer" = Source{[Schema="pbist_twitter",Item="vw_hashtag_slicer"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_hashtag_slicer\""
+                "#"pbist_twitter_vw_hashtag_slicer""
               ]
             }
           }
@@ -1969,10 +1970,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_mention_slicer\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_mention_slicer\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_mention_slicer" = Source{[Schema="pbist_twitter",Item="vw_mention_slicer"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_mention_slicer\""
+                "#"pbist_twitter_vw_mention_slicer""
               ]
             }
           }
@@ -1996,10 +1997,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_minimum_tweets\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_minimum_tweets\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_minimum_tweets" = Source{[Schema="pbist_twitter",Item="vw_minimum_tweets"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_minimum_tweets\""
+                "#"pbist_twitter_vw_minimum_tweets""
               ]
             }
           }
@@ -2083,10 +2084,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_tweets_normalized\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_tweets_normalized\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_tweets_normalized" = Source{[Schema="pbist_twitter",Item="vw_tweets_normalized"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_tweets_normalized\""
+                "#"pbist_twitter_vw_tweets_normalized""
               ]
             }
           }
@@ -2218,10 +2219,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"pbist_twitter_vw_tweets_processed\" = Source{[Schema=\"pbist_twitter\",Item=\"vw_tweets_processed\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"pbist_twitter_vw_tweets_processed" = Source{[Schema="pbist_twitter",Item="vw_tweets_processed"]}[Data] ",
                 "in ",
-                "#\"pbist_twitter_vw_tweets_processed\""
+                "#"pbist_twitter_vw_tweets_processed""
               ]
             }
           }
@@ -2257,10 +2258,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_vGetAllCategories\" = Source{[Schema=\"SalesLT\",Item=\"vGetAllCategories\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_vGetAllCategories" = Source{[Schema="SalesLT",Item="vGetAllCategories"]}[Data] ",
                 "in ",
-                "#\"SalesLT_vGetAllCategories\""
+                "#"SalesLT_vGetAllCategories""
               ]
             }
           }
@@ -2312,10 +2313,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_vProductAndDescription\" = Source{[Schema=\"SalesLT\",Item=\"vProductAndDescription\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_vProductAndDescription" = Source{[Schema="SalesLT",Item="vProductAndDescription"]}[Data] ",
                 "in ",
-                "#\"SalesLT_vProductAndDescription\""
+                "#"SalesLT_vProductAndDescription""
               ]
             }
           }
@@ -2486,10 +2487,10 @@
               "type": "m",
               "expression": [
                 "let ",
-                "Source = #\"SqlServer analytics-db-server.database.windows.net analytics_db\", ",
-                "#\"SalesLT_vProductModelCatalogDescription\" = Source{[Schema=\"SalesLT\",Item=\"vProductModelCatalogDescription\"]}[Data] ",
+                "Source = #"SqlServer analytics-db-server.database.windows.net analytics_db", ",
+                "#"SalesLT_vProductModelCatalogDescription" = Source{[Schema="SalesLT",Item="vProductModelCatalogDescription"]}[Data] ",
                 "in ",
-                "#\"SalesLT_vProductModelCatalogDescription\""
+                "#"SalesLT_vProductModelCatalogDescription""
               ]
             }
           }
